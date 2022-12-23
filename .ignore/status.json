@@ -1,0 +1,59 @@
+[
+    {
+        "status": 200,
+        "responseFlag": "1",
+        "operationResult": "START",
+        "timeStamp": "2020-04-25 20:33:23",
+        "cruisingRangeAcOn": "117000.0",
+        "cruisingRangeAcOff": "121000.0",
+        "currentChargeLevel": "0",
+        "chargeMode": "NOT_CHARGING",
+        "pluginState": "NOT_CONNECTED",
+        "charging": "NO",
+        "chargeStatus": "0",
+        "batteryDegradation": "140",
+        "batteryCapacity": "240",
+        "timeRequiredToFull": {
+            "hours": "14",
+            "minutes": "30"
+        },
+        "timeRequiredToFull200": {
+            "hours": "5",
+            "minutes": "0"
+        },
+        "timeRequiredToFull200_6kW": {
+            "hours": "",
+            "minutes": ""
+        }
+    },
+    {
+        "status": 200,
+        "BatteryStatusRecords": {
+            "OperationResult": "START",
+            "OperationDateAndTime": "25-Apr-2020 21:33",
+            "BatteryStatus": {
+                "BatteryChargingStatus": "NOT_CHARGING",
+                "BatteryCapacity": "240",
+                "BatteryRemainingAmount": "140",
+                "BatteryRemainingAmountWH": "17280",
+                "BatteryRemainingAmountkWH": "",
+                "SOC": {
+                    "Value": "59"
+                }
+            },
+            "PluginState": "NOT_CONNECTED",
+            "CruisingRangeAcOn": "117000",
+            "CruisingRangeAcOff": "121000",
+            "TimeRequiredToFull": {
+                "HourRequiredToFull": "14",
+                "MinutesRequiredToFull": "30"
+            },
+            "TimeRequiredToFull200": {
+                "HourRequiredToFull": "5",
+                "MinutesRequiredToFull": "0"
+            },
+            "NotificationDateAndTime": "2020/04/25 20:33",
+            "TargetDate": "2020/04/25 20:33"
+        }
+    }
+]
