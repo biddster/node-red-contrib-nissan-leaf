@@ -26,7 +26,6 @@
         "eslint-plugin-import": "^2.26.0",
         "husky": "^8.0.2",
         "lint-staged": "^13.1.0",
-        "markdown-to-html": "0.0.13",
         "mocha": "^10.2.0",
         "node-red-contrib-mock-node": "^0.5.3",
         "npm-check-updates": "^16.6.2",
