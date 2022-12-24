@@ -32,7 +32,8 @@ module.exports = function(RED) {
             climate_control_on: client => client.climateControlTurnOn(),
             climate_control_off: client => client.climateControlTurnOff(),
             climate_control_status: client => client.climateControlStatus(),
-            status: client => client.status()
+            status: client => client.status(),
+            cached_status: client => client.cachedStatus()
         };
 
         this.on('input', async msg => {
@@ -50,11 +51,10 @@ module.exports = function(RED) {
                 });
                 this.status({
                     text: `Executing [${msg.payload}]`,
-                    fill: 'green',
-                    shape: 'circle'
+                    fill: 'blue'
                 });
                 const response = await actuation(client);
-                this.send(response);
+                this.send({ payload: JSON.parse(response) });
                 this.status({ text: `Executed [${msg.payload}]`, fill: 'green' });
             } catch (error) {
                 this.error(error);

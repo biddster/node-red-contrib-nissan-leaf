@@ -12,5 +12,6 @@ Currently there are only 2 operations supported:
 |  climate_control_off | Turns off the climate control |
 |  climate_control_status | Gets the current climate control status |
 |  status | Returns the status of the car |
+|  cached_status | Returns the cached status of the car |
 
 This is very much a work in progress and additional operations will be added over time.
