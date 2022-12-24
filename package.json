@@ -4,7 +4,9 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "update-dependencies": "ncu -u && npm install",
+        "lint": "eslint ."
     },
     "author": "",
     "license": "ISC",
@@ -17,20 +19,19 @@
         "leaf-connect": "git+https://github.com/biddster/leaf-connect.git"
     },
     "devDependencies": {
-        "chai": "^4.2.0",
-        "eslint": "^6.8.0",
-        "eslint-config-airbnb-base": "^14.0.0",
-        "eslint-config-prettier": "^6.10.0",
-        "eslint-plugin-import": "^2.20.1",
-        "husky": "^4.2.2",
-        "lint-staged": "^10.0.7",
+        "chai": "^4.3.7",
+        "eslint": "^8.30.0",
+        "eslint-config-airbnb-base": "^15.0.0",
+        "eslint-config-prettier": "^8.5.0",
+        "eslint-plugin-import": "^2.26.0",
+        "husky": "^8.0.2",
+        "lint-staged": "^13.1.0",
         "markdown-to-html": "0.0.13",
-        "mocha": "^7.0.1",
-        "node-red": "^1.0.3",
-        "node-red-contrib-mock-node": "^0.4.0",
-        "npm-check-updates": "^4.0.1",
-        "nyc": "^15.0.0",
-        "prettier": "^1.19.1"
+        "mocha": "^10.2.0",
+        "node-red-contrib-mock-node": "^0.5.3",
+        "npm-check-updates": "^16.6.2",
+        "nyc": "^15.1.0",
+        "prettier": "^2.8.1"
     },
     "eslintConfig": {
         "env": {
