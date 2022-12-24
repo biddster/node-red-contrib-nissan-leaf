@@ -30,7 +30,9 @@ module.exports = function(RED) {
 
         const actuations = {
             climate_control_on: client => client.climateControlTurnOn(),
-            climate_control_off: client => client.climateControlTurnOff()
+            climate_control_off: client => client.climateControlTurnOff(),
+            climate_control_status: client => client.climateControlStatus(),
+            status: client => client.status()
         };
 
         this.on('input', async msg => {
